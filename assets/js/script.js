@@ -18,6 +18,29 @@ for(var i = 8; i < 18; i++) {
         currentState = 'past';
     }
 
+
+{/* <container class="" id='hour{}'>
+            <div class="col-2"></div>
+            <div class="hour w-25 p-4">${}</div>
+        </container> */}
+
+
+
+    var newStuff =
+
+    `<container class="row" id='hour-${i}'>
+            <div class="col-2"></div>
+            <div class="hour w-25 p-4 col-1">${timeSlot}</div>
+            <textarea class="description w-50 p-4 col-6 ${currentState} hour-${i}"></textarea>
+            <button class="saveBtn w-25 p-4 col-1 fas fa-save fa-2x"></button>
+            <div class="col-2">
+            </div>  
+        </container>
+        <p></p>`
+        ;
+
+    $(".container").append(newStuff);
+
 };
 
 /* 
