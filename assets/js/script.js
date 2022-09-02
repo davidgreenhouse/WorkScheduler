@@ -38,6 +38,20 @@ for(var i = 8; i < 18; i++) {
 
 };
 
+/*     var newStuff =
+
+    `<container class="row" id='hour-${}'>
+            <div class=""></div>
+            </div>  
+        </container>
+        <p></p>`
+        ;
+
+    $(".container").append(newStuff);
+
+};
+ */
+
 
 getHeaderDate();
 
@@ -51,9 +65,19 @@ getHeaderDate();
    for (var i = 8; i < 18; i++) {
     $(`.hour-${i}`).val(localStorage.getItem(`hour-${i}`));
 }
+
+/* getHeaderDate();
+   $(".saveBtn").on("click", function () {
+
+
+
+   for (var i = 8; i < 18; i++) {
+    $(`.hour-${i}`).val(localStorage.getItem(`hour-${i}`));
+} */ 
+
+
 /* function getHeaderDate() {
-    var currentHeaderDate = moment().format('dddd, MMMM Do');
-    $("#currentDay").text(currentHeaderDate);
+    var curre
 }
 var momentTime = moment().startOf("day").add(7, "hour");
 var hour = moment().format("HH");
@@ -78,23 +102,7 @@ for(var i = 8; i < 18; i++) {
 
 
 
-/*     var newStuff =
 
-    `<container class="row" id='hour-${i}'>
-            <div class="col-2"></div>
-            <div class="hour w-25 p-4 col-1">${timeSlot}</div>
-            <textarea class="description w-50 p-4 col-6 ${currentState} hour-${i}"></textarea>
-            <button class="saveBtn w-25 p-4 col-1 fas fa-save fa-2x"></button>
-            <div class="col-2">
-            </div>  
-        </container>
-        <p></p>`
-        ;
-
-    $(".container").append(newStuff);
-
-};
- */
 
 /* 
 getHeaderDate();
@@ -106,14 +114,3 @@ getHeaderDate();
     $(`${i}`).val(.getItem(`${i}`));
 } */
 
-/* getHeaderDate();
-   $(".saveBtn").on("click", function () {
-    var text = $(this).siblings(".description").val();
-    var time = $(this).parent().attr("id");
-
-    localStorage.setItem(time, text);
-   });
-
-   for (var i = 8; i < 18; i++) {
-    $(`.hour-${i}`).val(localStorage.getItem(`hour-${i}`));
-} */ 
